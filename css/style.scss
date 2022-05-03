@@ -32,6 +32,7 @@ body {
 	border-radius: 10px;
 	text-align: center;
 	font-family: Round;
+	padding-bottom: 5px;
 	.header {
 		height: 2em;
 		width: auto;
@@ -49,13 +50,13 @@ body {
 	}
 	.body {
 		background: #FFFFFF;
-		width: 90%;
+		width: 95%;
 		margin: 15px auto;
 		height: auto;
 		border-radius: 12px;
 		padding: 25px 0px;
 		.img {
-			margin-top: 2em;
+			margin-top: 1em;
 			border-radius: 50%;
 			width: 18%;
 			border: 3px solid #FF3333;
@@ -93,29 +94,36 @@ body {
 				background: #F1F2F4;
 				padding:10px;
 				border-radius: 50%;
-
 			}
 			.icon:hover {
 				background: #e4e6e8;
 			}
-			.instagram {
+			.instagram{
 				margin-left: 20px;
 				margin-right: 20px;
 			}
+			.tiktok {
+				margin-left: 20px;
+			}
 		}
-		.follow {
-			text-decoration: none;
-			color: #979a9f;
-			border: 1px solid #C9CED6;
-			padding: 10px 20px;
-			font-family: Round;	
-			border-radius: 50px;
-			font-size: 18px;
-		}
-		.follow:hover {
-			color:white;
-			background: #4BA7FE;
-			border: 1px solid #4BA7FE;
+		.button {
+			.follow_chat {
+				width: 150px;
+				text-decoration: none;
+				color: #979a9f;
+				border: 1px solid #C9CED6;
+				padding: 10px 20px;
+				font-family: Round;	
+				border-radius: 50px;
+				font-size: 18px;
+				background: #fff;
+				margin-left: 10px;
+			}
+			.follow_chat:hover {
+				color:white;
+				background: #4BA7FE;
+				border: 1px solid #4BA7FE;
+			}
 		}
 	}
 }
@@ -136,6 +144,7 @@ body {
 				width: 95%;		
 			}
 			.social {
+				margin-bottom: 10px;
 				.icon {
 					width:calc(2.4em + 2vw);
 				}
@@ -143,11 +152,23 @@ body {
 					margin-left: 10px;
 					margin-right: 10px;
 				}
+				.tiktok {
+					margin-left: 10px;
+				}
 			}
-			.follow {
-				font-size: 15px;
-				padding: 10px 20px;
+			.button {
+				.follow_chat {
+					font-size: 15px;
+					padding: 10px 15px;
+					width: 100px;
+				}
+				.chat {
+					margin-top: 10px;
+				}
 			}
+		}
+		.webs {
+			font-size:calc(8px + 1.5vw);
 		}
 	}
 }
