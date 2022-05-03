@@ -58,24 +58,24 @@ body {
 			margin-top: 2em;
 			border-radius: 50%;
 			width: 18%;
-			border: 4px solid #FF3333;
+			border: 3px solid #FF3333;
 		}
 		.name {
 			font-family: 'Oswald', sans-serif;
-			font-size: calc(0.8em + 1.5vw);
+			font-size: calc(1.5em + 1.5vw);
 			font-weight: 400;
 			margin-bottom: 7px;
 		}
 		.more {
 			color: #98A1B1;
-			font-size: 13px;
+			font-size: 17px;
 			margin-bottom: 10px;
 		}
 		.contain {
-			width: 40%;
+			width: 65%;
 			margin: 0 auto;
 			line-height:1.5;
-			font-size: 15px;
+			font-size: 18px;
 			color: #98A1B1;
 			font-weight: 600;
 			font-family: 'Inter', sans-serif;
@@ -88,25 +88,29 @@ body {
 			justify-content: center;
 			margin-bottom: 20px;
 			.icon {
-				width:3em;
+				width:3.2em;
 				margin:0 auto;
 				background: #F1F2F4;
 				padding:10px;
 				border-radius: 50%;
 
 			}
+			.icon:hover {
+				background: #e4e6e8;
+			}
 			.instagram {
-				margin-left: 15px;
-				margin-right: 15px;
+				margin-left: 20px;
+				margin-right: 20px;
 			}
 		}
 		.follow {
 			text-decoration: none;
 			color: #979a9f;
 			border: 1px solid #C9CED6;
-			padding: 8px 18px;
+			padding: 10px 20px;
 			font-family: Round;	
 			border-radius: 50px;
+			font-size: 18px;
 		}
 		.follow:hover {
 			color:white;
@@ -119,26 +123,30 @@ body {
 	.main {
 		.body {
 			.img {
-				width: 35%;
+				width: 33%;
 			}
 			.name {
-				font-size: calc(0.5em + 3vw);
+				font-size: calc(0.9em + 3.2vw);
 			}
 			.more {
-				font-size:calc(3px + 1.5vw);
+				font-size:calc(5.5px + 1.5vw);
 			}
 			.contain {
-				font-size:calc(4px + 1.5vw);		
-				width: 70%;		
+				font-size:calc(7px + 1.5vw);		
+				width: 80%;		
 			}
 			.social {
 				.icon {
-					width:calc(2em + 2vw);
+					width:calc(2.4em + 2vw);
 				}
 				.instagram {
 					margin-left: 10px;
 					margin-right: 10px;
 				}
+			}
+			.follow {
+				font-size: 15px;
+				padding: 10px 20px;
 			}
 		}
 	}
