@@ -23,9 +23,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -38,9 +35,12 @@ body {
 
 .main {
   width: 55em;
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 100px;
   background: #F7F8F9;
-  margin: 0px 10px;
+  margin: 20px 10px;
   border-radius: 10px;
   text-align: center;
   font-family: Round;
@@ -146,7 +146,45 @@ body {
   margin-left: 20px;
 }
 
-.main .body .button .follow_chat {
+.main .body .button {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  width: 97%;
+  margin: 15px auto;
+}
+
+.main .footer .button_web {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.main .footer .button_web .web {
+  border-radius: 15px;
+  width: 380px;
+  height: 200px;
+}
+
+.main .footer .button_web:hover > .web {
+  -webkit-box-shadow: 2px 2px 10px #6d78d8;
+          box-shadow: 2px 2px 10px #6d78d8;
+}
+
+.follow_chat {
   width: 150px;
   text-decoration: none;
   color: #979a9f;
@@ -159,13 +197,16 @@ body {
   margin-left: 10px;
 }
 
-.main .body .button .follow_chat:hover {
+.follow_chat:hover {
   color: white;
   background: #4BA7FE;
   border: 1px solid #4BA7FE;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
+  .main {
+    margin-top: 10px;
+  }
   .main .body .img {
     width: 33%;
   }
@@ -197,11 +238,32 @@ body {
     padding: 10px 15px;
     width: 100px;
   }
-  .main .body .button .chat {
-    margin-top: 10px;
-  }
   .main .webs {
     font-size: calc(8px + 1.5vw);
+  }
+  .main .footer {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    width: 95%;
+  }
+  .main .footer .center {
+    margin-top: 20px;
+  }
+  .main .footer .button_web .web {
+    width: 97%;
+    height: 97%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .main .body .social .icon {
+    width: calc(1.8em + 3vw);
+  }
+  .main .body .button .follow_chat {
+    width: 75px;
+  }
+  .main .footer .button_web .web {
+    border-radius: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

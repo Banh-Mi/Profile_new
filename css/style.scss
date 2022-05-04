@@ -17,7 +17,6 @@ body {
     background-position: top;
     background-repeat: no-repeat;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 @font-face {
@@ -26,9 +25,10 @@ body {
 }
 .main {
 	width:55em;
-	height: auto;
+	height: fit-content;
+	margin-top: 100px	;
 	background: #F7F8F9;
-	margin: 0px 10px;
+	margin: 20px 10px;
 	border-radius: 10px;
 	text-align: center;
 	font-family: Round;
@@ -107,28 +107,51 @@ body {
 			}
 		}
 		.button {
-			.follow_chat {
-				width: 150px;
-				text-decoration: none;
-				color: #979a9f;
-				border: 1px solid #C9CED6;
-				padding: 10px 20px;
-				font-family: Round;	
-				border-radius: 50px;
-				font-size: 18px;
-				background: #fff;
-				margin-left: 10px;
+			margin: 0 auto;
+			display: flex;
+			width: 40%;
+			justify-content: center;
+		}
+	}
+	.footer {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		width: 97%;
+		margin:15px auto;
+		.button_web {
+			width: fit-content;
+			margin: 0 auto;
+			.web {
+				border-radius: 15px;
+				width: 380px;
+				height: 200px;
 			}
-			.follow_chat:hover {
-				color:white;
-				background: #4BA7FE;
-				border: 1px solid #4BA7FE;
-			}
+		}
+		.button_web:hover  >.web {
+			box-shadow: 2px 2px 10px #6d78d8;
 		}
 	}
 }
-@media screen and (max-width:680px) {
+.follow_chat {
+	width: 150px;
+	text-decoration: none;
+	color: #979a9f;
+	border: 1px solid #C9CED6;
+	padding: 10px 20px;
+	font-family: Round;	
+	border-radius: 50px;
+	font-size: 18px;
+	background: #fff;
+	margin-left: 10px;
+}
+.follow_chat:hover {
+	color:white;
+	background: #4BA7FE;
+	border: 1px solid #4BA7FE;
+}
+@media screen and (max-width:800px) {
 	.main {
+		margin-top: 10px;
 		.body {
 			.img {
 				width: 33%;
@@ -162,13 +185,46 @@ body {
 					padding: 10px 15px;
 					width: 100px;
 				}
-				.chat {
-					margin-top: 10px;
-				}
 			}
 		}
 		.webs {
 			font-size:calc(8px + 1.5vw);
+		}
+		.footer {
+			grid-template-columns: 100%;
+			width: 95%;
+			.center{
+				margin-top: 20px;
+			}
+			.button_web {
+				.web {
+					width: 97%;
+					height:97%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:250px) {
+	.main {
+		.body {
+			.social {
+				.icon {
+					width:calc(1.8em + 3vw);
+				}
+			}
+			.button {
+				.follow_chat {
+					width:75px;
+				}
+			}
+		}
+		.footer {
+			.button_web {
+				.web {
+					border-radius: 5px;
+				}
+			}
 		}
 	}
 }
