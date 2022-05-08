@@ -170,7 +170,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .main .footer .button_web .web {
@@ -247,7 +247,7 @@ body {
     width: 95%;
   }
   .main .footer .center {
-    margin-top: 20px;
+    margin-top: 5px;
   }
   .main .footer .button_web .web {
     width: 97%;
